@@ -1,0 +1,74 @@
+[
+  {
+    "outputFileName": "wwwroot/css/footer.min.css",
+    "inputFiles": [
+      "wwwroot/css/footer.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/nav.min.css",
+    "inputFiles": [
+      "wwwroot/css/nav.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/pannellum.min.js",
+    "inputFiles": [
+      "wwwroot/js/pannellum.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/pannellum.min.css",
+    "inputFiles": [
+      "wwwroot/css/pannellum.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/Automation.min.css",
+    "inputFiles": [
+      "wwwroot/css/Automation.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/section.min.css",
+    "inputFiles": [
+      "wwwroot/css/section.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/header.min.css",
+    "inputFiles": [
+      "wwwroot/css/header.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/position.min.css",
+    "inputFiles": [
+      "wwwroot/css/position.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/galery.min.js",
+    "inputFiles": [
+      "wwwroot/js/galery.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/galery.min.css",
+    "inputFiles": [
+      "wwwroot/css/galery.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/home.min.css",
+    "inputFiles": [
+      "wwwroot/css/home.css"
+    ]
+  }
+]
