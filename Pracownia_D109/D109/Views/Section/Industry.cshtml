@@ -3,7 +3,55 @@
     ViewData["Title"] = "Przemysł 4.0";
 }
 
-<h2>@ViewData["Title"]</h2>
-<div style="text-align:center; color:orangered; max-width:100%">
-    <h1>Strona w budowie!</h1>
-</div>
+<link rel="stylesheet" href="~/css/section.css" />
+
+<header class="hederSections"><h2>@ViewData["Title"]</h2></header>
+<hr />
+<section class="positionList">
+
+    <a asp-area="" asp-controller="Section" asp-action="Industry1" class="positionBlock">
+        <article class="positionImg">
+            <img src="~/images/Section/Industry/si11.jpg" />
+        </article>
+        <footer class="positionHeder">
+            Robot Kawasaki
+        </footer>
+    </a>
+
+    <a asp-area="" asp-controller="Section" asp-action="Industry2" class="positionBlock">
+        <article class="positionImg">
+            <img src="~/images/Section/Industry/si21.jpg" />
+        </article>
+        <footer class="positionHeder">
+            Linia produkcyjna
+        </footer>
+    </a>
+
+    <a asp-area="" asp-controller="Section" asp-action="Industry3" class="positionBlock">
+        <article class="positionImg">
+            <img src="~/images/Section/Industry/si31.jpg" />
+        </article>
+        <footer class="positionHeder">
+            Obrabiarka CNC
+        </footer>
+    </a>
+
+    <a asp-area="" asp-controller="Section" asp-action="Industry4" class="positionBlock">
+        <article class="positionImg">
+            <img src="~/images/Section/Industry/si41.jpg" />
+        </article>
+        <footer class="positionHeder">
+            Diagnostyka wrzeciona CNC
+        </footer>
+    </a>
+
+    <a asp-area="" asp-controller="Section" asp-action="Industry5" class="positionBlock">
+        <article class="positionImg">
+            <img src="~/images/Section/Industry/si51.jpg" />
+        </article>
+        <footer class="positionHeder">
+            Xbox
+        </footer>
+    </a>
+
+</section>

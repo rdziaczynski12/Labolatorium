@@ -28,6 +28,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\Section\Industry\Position1.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Section\Industry\Position2.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Section\Industry\Position3.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Section\Industry\Position4.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Section\Industry\Position5.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Section\Mechatronic\Position1.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

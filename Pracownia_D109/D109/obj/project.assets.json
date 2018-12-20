@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Pracownia_D109\\D109\\D109.csproj",
+      "projectUniqueName": "E:\\GIT\\Labolatorium\\Pracownia_D109\\D109\\D109.csproj",
       "projectName": "D109",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Pracownia_D109\\D109\\D109.csproj",
+      "projectPath": "E:\\GIT\\Labolatorium\\Pracownia_D109\\D109\\D109.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\Pracownia_D109\\D109\\obj\\",
+      "outputPath": "E:\\GIT\\Labolatorium\\Pracownia_D109\\D109\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -32,6 +32,30 @@ namespace D109.Controllers
         {
             return View("Views/Section/Mechatronic/Position5.cshtml");
         }
+        public IActionResult Industry()
+        {
+            return View();
+        }
+        public IActionResult Industry1()
+        {
+            return View("Views/Section/Industry/Position1.cshtml");
+        }
+        public IActionResult Industry2()
+        {
+            return View("Views/Section/Industry/Position2.cshtml");
+        }
+        public IActionResult Industry3()
+        {
+            return View("Views/Section/Industry/Position3.cshtml");
+        }
+        public IActionResult Industry4()
+        {
+            return View("Views/Section/Industry/Position4.cshtml");
+        }
+        public IActionResult Industry5()
+        {
+            return View("Views/Section/Industry/Position5.cshtml");
+        }
         public IActionResult Automation()
         {
             return View();
@@ -55,10 +79,6 @@ namespace D109.Controllers
         public IActionResult Automation5()
         {
             return View("Views/Section/Automation/Position5.cshtml");
-        }
-        public IActionResult Industry()
-        {
-            return View();
         }
         public IActionResult Room()
         {
