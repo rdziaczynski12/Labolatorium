@@ -18,6 +18,11 @@
     }
 }
 
+#myCarousel {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .hederBaner {
     text-shadow: black 0.1em 0.1em 0.2em;
 }

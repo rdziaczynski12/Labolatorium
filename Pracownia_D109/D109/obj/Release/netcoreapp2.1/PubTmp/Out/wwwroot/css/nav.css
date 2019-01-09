@@ -11,6 +11,7 @@
 
     .navbar-inverse .navbar-nav > li > a {
         background-color: rgba(255,255,255,0.1);
+        border-radius: 15px;
     }
 
     .navbar-inverse .navbar-nav > li > a:focus {
@@ -43,6 +44,10 @@
     .nav > li.virtual {
         min-width: 150px;
     }
+
+    .navbar-inverse .navbar-nav > li > a {
+        border-radius: 0px 0px 15px 15px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -69,7 +74,6 @@
 
 .navbar-inverse .navbar-nav > li > a {
     color: #e4e4e4;
-    border-radius: 15px;
 }
 
 .navbar-inverse .navbar-brand {

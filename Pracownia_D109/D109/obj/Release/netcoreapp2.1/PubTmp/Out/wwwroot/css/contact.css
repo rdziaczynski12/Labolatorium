@@ -18,11 +18,13 @@
     }
 }
 
-section {
+.employees {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .employeeBlock {
@@ -57,4 +59,9 @@ section {
     padding: 15px;
     background-color: #003b82;
     color: #fff;
+}
+
+.location {
+    padding-left: 10px;
+    padding-right: 10px;
 }

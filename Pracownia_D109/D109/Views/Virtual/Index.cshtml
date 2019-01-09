@@ -3,7 +3,7 @@
     ViewData["Title"] = "Wirtualny spacer";
 }
 
-<link rel="stylesheet" href="~/css/pannellum.css" />
+<link rel="stylesheet" href="~/css/virtual.css" />
 <script type="text/javascript" src="~/js/pannellum.js"></script>
 
 <style>
@@ -17,7 +17,8 @@
     <h2>@ViewData["Title"]</h2>
 </header>
 <hr />
-<div>
+
+<div class="virtualGalery">
     <div id="panorama"></div>
     <script>
         pannellum.viewer('panorama', {
