@@ -70,5 +70,11 @@
     "inputFiles": [
       "wwwroot/css/home.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/css/contact.min.css",
+    "inputFiles": [
+      "wwwroot/css/contact.css"
+    ]
   }
 ]

@@ -6,6 +6,10 @@
     .description {
         width: 50%;
     }
+
+    .lineDescription {
+        display: none;
+    }
 }
 @media (max-width: 767px) {
     .galery {
@@ -14,6 +18,15 @@
 
     .description {
         width: 100%;
+    }
+
+    .lineDescription {
+        display: block;
+        width: 100%;
+    }
+
+    .lineDescription > hr {
+        margin-bottom: 0px;
     }
 }
 
@@ -25,6 +38,7 @@
 .galery {
     background-color: #e8e8e8;
     padding: 3px;
+    border-radius: 5px;
 }
 
 .description {

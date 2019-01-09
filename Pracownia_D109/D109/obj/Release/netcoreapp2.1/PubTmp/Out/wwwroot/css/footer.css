@@ -2,8 +2,9 @@
     background-color: #003b82;
     color: #fff;
     padding-left: 5%;
-    padding-right:5%;
+    padding-right: 5%;
     display: flex;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .copy {
