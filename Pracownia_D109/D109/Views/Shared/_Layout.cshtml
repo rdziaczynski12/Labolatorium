@@ -1,9 +1,24 @@
-﻿<!DOCTYPE html>
-<html lang="pl-PL">
+﻿@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization;
+@inject IViewLocalizer Localizer
+@{
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+    var language = "test"; //Request.Cookies[".AspNetCore.Culture"].ToString();
+
+    D109.Controllers.LanguageController.changeLanguage();
+}
+
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - D109</title>
+
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -38,28 +53,32 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><i class="fa fa-home fa-fw"></i>&nbsp;Strona główna</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><i class="fa fa-home fa-fw"></i>&nbsp; @Localizer["home"]</a>
+                <div class="languageMenu navbar-brand">
+                    <a asp-area="" asp-controller="Language" asp-action="pl" asp-route-returnUrl="@returnUrl" method="post" >PL</a>
+                    <div>|</div>
+                    <a asp-area="" asp-controller="Language" asp-action="en" asp-route-returnUrl="@returnUrl" method="post" >EN</a>
+                    
+                </div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sekcje <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> @Localizer["sections"] <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a asp-area="" asp-controller="Section" asp-action="Automation">Podstawy automatyki</a></li>
-                            <li><a asp-area="" asp-controller="Section" asp-action="Industry">Przemysł 4.0</a></li>
-                            <li><a asp-area="" asp-controller="Section" asp-action="Room">Inteligentny pokój</a></li>
-                            <li><a asp-area="" asp-controller="Section" asp-action="Mechatronic">Mechatronika i szybkie prototypowanie</a></li>
+                            <li><a asp-area="" asp-controller="Section" asp-action="Automation">@Localizer["automation"]</a></li>
+                            <li><a asp-area="" asp-controller="Section" asp-action="Industry">@Localizer["industry"]</a></li>
+                            <li><a asp-area="" asp-controller="Section" asp-action="Room">@Localizer["room"]</a></li>
+                            <li><a asp-area="" asp-controller="Section" asp-action="Mechatronic">@Localizer["mechatronic"]</a></li>
                         </ul>
                     </li>
-                    <li class="virtual"><a asp-area="" asp-controller="Virtual" asp-action="Index">Wirtualny spacer</a></li>
-                    <li><a asp-area="" asp-controller="Cooperation" asp-action="Index">Współpraca</a></li>
-                    <li><a asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a></li>
-
+                    <li class="virtual"><a asp-area="" asp-controller="Virtual" asp-action="Index"> @Localizer["_virtual"]</a></li>
+                    <li><a asp-area="" asp-controller="Cooperation" asp-action="Index">@Localizer["cooperation"]</a></li>
+                    <li><a asp-area="" asp-controller="Contact" asp-action="Index">@Localizer["contact"]</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <partial name="_CookieConsentPartial" />
     <div class="body-content">
         <div class="container">
@@ -86,9 +105,9 @@
 
             </footer>
         </div>
-        <p class="copy">&copy; 2018 - Rafał Dziaczyński - student Politechniki Rzeszowskiej</p>
+        <p class="copy">&copy; @Localizer["footer"]</p>
     </div>
-    
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

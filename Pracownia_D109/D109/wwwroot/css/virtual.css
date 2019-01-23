@@ -5,3 +5,8 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+#panorama {
+    width: 100%;
+    height: 400px;
+}

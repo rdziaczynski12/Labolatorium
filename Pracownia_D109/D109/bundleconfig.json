@@ -76,5 +76,11 @@
     "inputFiles": [
       "wwwroot/css/contact.css"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/css/virtual.min.css",
+    "inputFiles": [
+      "wwwroot/css/virtual.css"
+    ]
   }
 ]

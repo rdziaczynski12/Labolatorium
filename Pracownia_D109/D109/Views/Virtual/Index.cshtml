@@ -1,17 +1,13 @@
-﻿
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = "Wirtualny spacer";
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+    D109.Controllers.LanguageController.changeLanguage();
+    ViewData["Title"] = @Localizer["title"];
 }
 
 <link rel="stylesheet" href="~/css/virtual.css" />
 <script type="text/javascript" src="~/js/pannellum.js"></script>
-
-<style>
-    #panorama {
-        width: 100%;
-        height: 400px;
-    }
-</style>
 
 <header class="hederSections">
     <h2>@ViewData["Title"]</h2>
@@ -23,125 +19,197 @@
     <script>
         pannellum.viewer('panorama', {
             "default": {
-                "firstScene": "library",
-                "author": "Matthew Petroff",
+                "firstScene": "automation",
                 "sceneFadeDuration": 1000,
                 "autoLoad": true
             },
 
             "scenes": {
-                "library": {
-                    "title": "George Peabody Library",
-                    "hfov": 100,
-                    "pitch": 10,
-                    "yaw": 50,
+                "automation": {
+                    "title": "@Localizer["automationTitle"]", 
+                    "hfov": 150,
+                    "pitch": -5,
+                    "yaw": 105,
                     "compass": true,
-                    "northOffset": 289,
+                    "northOffset": 290,
                     "type": "equirectangular",
-                    "panorama": "https://pannellum.org/images/alma.jpg"
+                    "panorama": "/images/Virtual/zdj1.jpg"
                     ,
                     "hotSpots": [
                         {
-                            "pitch": 60,
-                            "yaw": 60,
+                            "pitch": -20,
+                            "yaw": 30,
                             "type": "info",
-                            "text": "The skylight is supported by an iron truss and has a second, peaked skylight over it."
+                            "text": "@Localizer["automation1"]",
+                            "URL": "/Section/Automation1"
                         },
                         {
-                            "pitch": 10,
-                            "yaw": 25,
+                            "pitch": -20,
+                            "yaw": -30,
                             "type": "info",
-                            "text": "Much of the library was constructed from cast-iron to reduce the risk of fire."
+                            "text": "@Localizer["automation2"]",
+                            "URL": "/Section/Automation2"
                         },
                         {
-                            "pitch": 0,
-                            "yaw": 8,
+                            "pitch": -15,
+                            "yaw": 50,
                             "type": "info",
-                            "text": "The lighting was originally gas."
+                            "text": "@Localizer["automation3"]",
+                            "URL": "/Section/Automation3"
+                        },
+                        {
+                            "pitch": -15,
+                            "yaw": -50,
+                            "type": "info",
+                            "text": "@Localizer["automation4"]",
+                            "URL": "/Section/Automation4"
+                        },
+                        {
+                            "pitch": -10,
+                            "yaw": 65,
+                            "type": "info",
+                            "text": "@Localizer["automation5"]",
+                            "URL": "/Section/Automation5"
                         },
                         {
                             "pitch": -3,
                             "yaw": 115,
                             "type": "info",
-                            "text": "The JHU library catalog contains the Peabody Library’s holdings.",
-                            "URL": "https://catalog.library.jhu.edu/"
+                            "text": "@Localizer["room"]",
+                            "URL": "/Section/Room"
                         },
                         {
                             "pitch": -3,
-                            "yaw": 65,
+                            "yaw": 190,
                             "type": "scene",
-                            "text": "Gallery",
-                            "sceneId": "gallery"
+                            "text": "@Localizer["mechatronicTitle"]",
+                            "sceneId": "mechatronic"
                         },
                         {
-                            "pitch": 47,
-                            "yaw": -135,
+                            "pitch": -5,
+                            "yaw": -85,
                             "type": "scene",
-                            "text": "6th Floor",
-                            "sceneId": "6th-floor"
+                            "text": "@Localizer["industryTitle"]",
+                            "sceneId": "industry"
                         }
                     ]
                 },
 
-                "gallery": {
-                    "title": "Gallery",
-                    "hfov": 100,
-                    "yaw": -20,
+                "mechatronic": {
+                    "title": "@Localizer["mechatronicTitle"]",
+                    "hfov": 150,
+                    "pitch": -10,
+                    "yaw": 190,
                     "compass": true,
-                    "northOffset": 240,
+                    "northOffset": 310,
                     "type": "equirectangular",
-                    "panorama": "/images/Virtual/examplepano.jpg"
+                    "panorama": "/images/Virtual/zdj2.jpg"
                     ,
                     "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw": 65,
+                            "type": "info",
+                            "text": "@Localizer["mechatronic1"]",
+                            "URL": "/Section/Mechatronic1"
+                        },
+                        {
+                            "pitch": -15,
+                            "yaw": -80,
+                            "type": "info",
+                            "text": "@Localizer["mechatronic2"]",
+                            "URL": "/Section/Mechatronic2"
+                        },
+                        {
+                            "pitch": -15,
+                            "yaw": -180,
+                            "type": "info",
+                            "text": "@Localizer["mechatronic3"]",
+                            "URL": "/Section/Mechatronic3"
+                        },
+                        {
+                            "pitch": -7,
+                            "yaw": 113,
+                            "type": "info",
+                            "text": "@Localizer["mechatronic4"]",
+                            "URL": "/Section/Mechatronic4"
+                        },
+                        {
+                            "pitch": -15,
+                            "yaw": -110,
+                            "type": "info",
+                            "text": "@Localizer["mechatronic5"]",
+                            "URL": "/Section/Mechatronic5"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 10,
+                            "type": "scene",
+                            "text": "@Localizer["automationTitle"]",
+                            "sceneId": "automation"
+                        },
                         {
                             "pitch": -7,
                             "yaw": -58,
                             "type": "scene",
-                            "text": "Library",
-                            "sceneId": "library",
+                            "text": "@Localizer["industryTitle"]",
+                            "sceneId": "industry",
                             "targetYaw": 240
                         }
                     ]
                 },
 
-                "6th-floor": {
-                    "title": "6th Floor",
-                    "hfov": 100,
+                "industry": {
+                    "title": "@Localizer["industryTitle"]",
+                    "hfov": 150,
                     "pitch": -20,
-                    "yaw": -20,
+                    "yaw": 7,
                     "compass": true,
-                    "northOffset": 0,
-                    "type": "multires",
-                    "multiRes": {
-                        "basePath": "https:\/\/pannellum.org/images/multires/6th-floor",
-                        "path": "/%l/%s%y_%x",
-                        "fallbackPath": "/fallback/%s",
-                        "extension": "jpg",
-                        "tileResolution": 512,
-                        "maxLevel": 4,
-                        "cubeResolution": 3968
-                    },
+                    "northOffset": 130,
+                    "type": "equirectangular",
+                    "panorama": "/images/Virtual/zdj3.jpg",
                     "hotSpots": [
                         {
-                            "pitch": -47.5,
-                            "yaw": -11,
-                            "type": "scene",
-                            "text": "Main Floor",
-                            "sceneId": "library"
+                            "pitch": -10,
+                            "yaw": 0,
+                            "type": "info",
+                            "text": "@Localizer["industry1"]",
+                            "URL": "/Section/Industry1"
                         },
                         {
-                            "pitch": -28,
-                            "yaw": -3,
-                            "type": "scene",
-                            "text": "Gallery",
-                            "sceneId": "gallery"
+                            "pitch": -10,
+                            "yaw": -35,
+                            "type": "info",
+                            "text": "@Localizer["industry2"]",
+                            "URL": "/Section/Industry2"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": 55,
+                            "type": "info",
+                            "text": "@Localizer["industry3"]",
+                            "URL": "/Section/Industry3"
                         },
                         {
                             "pitch": -20,
-                            "yaw": -165.7,
+                            "yaw": 145,
                             "type": "info",
-                            "text": "The A B C of Prohibition",
-                            "URL": "https://catalyst.library.jhu.edu/catalog/bib_1121184"
+                            "text": "@Localizer["industry4"]",
+                            "URL": "/Section/Industry4"
+                        },
+                        {
+                            "pitch": -20,
+                            "yaw": -150,
+                            "type": "info",
+                            "text": "@Localizer["industry5"]",
+                            "URL": "/Section/Industry5"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -130,
+                            "type": "scene",
+                            "text": "@Localizer["automationTitle"]",
+                            "sceneId": "automation"
                         }
                     ]
                 }

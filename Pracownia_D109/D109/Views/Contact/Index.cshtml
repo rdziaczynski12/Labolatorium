@@ -1,5 +1,9 @@
-﻿@{
-    ViewData["Title"] = "Kontakt";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+    D109.Controllers.LanguageController.changeLanguage();
+    ViewData["Title"] = @Localizer["title"];
 }
 <link rel="stylesheet" href="~/css/contact.css" />
 
@@ -16,9 +20,9 @@
         </div>
         <div class="data">
             <strong>mgr inż. Grzegorz Piecuch</strong><br />
-            <strong>Telefon:</strong> (17) 865 15 48<br />
-            <strong>E-mail:</strong> <a href="mailto:gpiecuch@kia.prz.edu.pl">gpiecuch@kia.prz.edu.pl</a><br />
-            <strong>Pokój:</strong> D 202a
+            @Localizer["phonePiecuch"]<br />
+            @Localizer["e-maliPiecuch"]<br />
+            @Localizer["roomPiecuch"]
         </div>
     </div>
 
@@ -28,9 +32,9 @@
         </div>
         <div class="data">
             <strong>dr inż. Tomasz Żabiński</strong><br />
-            <strong>Telefon:</strong> (17) 865 17 66<br />
-            <strong>E-mail:</strong> <a href="mailto:tomz@prz.edu.pl">tomz@prz.edu.pl</a><br />
-            <strong>Pokój:</strong> D 102c
+            @Localizer["phoneZabinski"]<br />
+            @Localizer["e-mailZabinski"]<br />
+            @Localizer["roomZabinski"]
         </div>
     </div>
 </section>

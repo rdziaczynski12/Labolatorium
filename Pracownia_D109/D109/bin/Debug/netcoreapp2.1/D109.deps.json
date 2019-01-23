@@ -32,6 +32,11 @@
         "runtime": {
           "D109.dll": {}
         },
+        "resources": {
+          "en/D109.resources.dll": {
+            "locale": "en"
+          }
+        },
         "compile": {
           "D109.dll": {}
         }

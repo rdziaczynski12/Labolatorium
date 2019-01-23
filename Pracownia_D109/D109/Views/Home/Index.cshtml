@@ -1,10 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Strona główna";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+    D109.Controllers.LanguageController.changeLanguage();
+    ViewData["Title"] = @Localizer["home"];
 }
 
 <link rel="stylesheet" href="~/css/home.css" />
 
-<header class="hederSections"><h2>Laboratorium D 109</h2></header>
+<header class="hederSections"><h2>@Localizer["title"]</h2></header>
 
 <hr />
 
@@ -17,38 +21,38 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="~/images/Home/baner1.jpg" alt="Labolatorium D 109" class="img-responsive" />
-            <h1 class="hederBaner carousel-caption">Labolatorium D 109</h1>
+            <img src="~/images/Home/baner1.jpg" alt=@Localizer["banerTitle1"] class="img-responsive" />
+            <h1 class="hederBaner carousel-caption">@Localizer["banerTitle1"]</h1>
             <div class="carousel-caption" role="option">
                 <p class="footerBaner">
-                    Tu szkolimy przyszłych inżynierów!
+                    @Localizer["banerText1"]
                 </p>
             </div>
         </div>
         <div class="item">
-            <img src="~/images/Home/baner2.jpg" alt="Roboty" class="img-responsive" />
-            <h1 class="hederBaner carousel-caption">Roboty</h1>
+            <img src="~/images/Home/baner2.jpg" alt=@Localizer["banerTitle2"] class="img-responsive" />
+            <h1 class="hederBaner carousel-caption">@Localizer["banerTitle2"]</h1>
             <div class="carousel-caption" role="option">
                 <p class="footerBaner">
-                    To standard w dzisiejszym przemyśle, poznaj je razem znami i naucz się projektować własne.
+                    @Localizer["banerText2"]
                 </p>
             </div>
         </div>
         <div class="item">
-            <img src="~/images/Home/baner3.jpg" alt="Industrie 4.0" class="img-responsive" />
-            <h1 class="hederBaner carousel-caption">Industrie 4.0</h1>
+            <img src="~/images/Home/baner3.jpg" alt=@Localizer["banerTitle3"] class="img-responsive" />
+            <h1 class="hederBaner carousel-caption">@Localizer["banerTitle3"]</h1>
             <div class="carousel-caption" role="option">
                 <p class="footerBaner">
-                    Inteligentne linie produkcyjne są domeną przemysłu 4.0.
+                    @Localizer["banerText3"]
                 </p>
             </div>
         </div>
         <div class="item">
-            <img src="~/images/Home/baner4.jpg" alt="Sterowniki" class="img-responsive" />
-            <h1 class="hederBaner carousel-caption">Sterowniki</h1>
+            <img src="~/images/Home/baner4.jpg" alt=@Localizer["banerTitle4"] class="img-responsive" />
+            <h1 class="hederBaner carousel-caption">@Localizer["banerTitle4"]</h1>
             <div class="carousel-caption" role="option">
                 <p class="footerBaner">
-                    Nowoczesne sterowniki PLC dają nam praktycznie nie ograniczone możliwości. 
+                    @Localizer["banerText4"]
                 </p>
             </div>
         </div>
@@ -66,23 +70,7 @@
 
 <hr />
 <section class="description">
-    <p>
-        Laboratorium D 109 jest salą, w której odbywa się wiele zajęć o tematyce automatyki przemysłowej.  Pracownia jest podzielona na kilka stref:
-    </p>
-    <ul>
-        <li>Główna sala w której znajdują się stanowiska z zajęć podstaw automatyki oraz mechatroniki i szybkiego prototypowania.</li>
-        <li>Inteligentny pokój w którym studenci mogą wdrążać swoje pomysły.</li>
-        <li>
-            Część przeznaczona na zajęcia z pracowni problemowej w ramach której studenci mogą zetknąć się z prawdziwymi maszynami spotykanymi 
-            w nowoczesnym przemyśle i realizować na nich swoje projekty.
-        </li>
-    </ul>
-    <p>
-        Wyposażenie Sali D 109 jest ogromne od nowoczesnych sterowników PLC i robotów po drobne czujniki i elementy dzięki którym mamy
-        ogromne możliwości wykazania się podczas zajęć. Dodatkowo wyposażenie to ciągle się rozrasta i powstają nowe stanowiska dzięki wspólnej pracy 
-        profesorów oraz studentów realizujących swoje projekty i prace.<br />
-        Chcesz dowiedzieć się więcej?
-    </p>
-    <strong>Zapraszamy!</strong>
+    @Localizer["description"]
+
 
 </section>

@@ -1,6 +1,9 @@
-﻿
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = "Współpraca";
+    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
+    D109.Controllers.LanguageController.changeLanguage();
+    ViewData["Title"] = @Localizer["title"];
 }
 
 <header class="hederSections">
@@ -8,6 +11,6 @@
 </header>
 <hr />
 <div style="text-align:center; color:orangered; max-width:100%">
-    <img src="~/images/stronawbudowie.png" style="width:80%"/>
+    <img src="~/images/stronawbudowie.png" style="width:80%" />
 </div>
 

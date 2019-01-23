@@ -30,7 +30,7 @@
     }
 
     .navbar-nav {
-        width: calc(100% - 180px);
+        width: calc(100% - 235px);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -38,7 +38,7 @@
     }
 
     .nav > li {
-        min-width: 130px;
+        min-width: 107px;
     }
 
     .nav > li.virtual {
@@ -146,3 +146,27 @@ li.divider {
     background-color: rgba(255,255,255,0.2);
 }
 
+div.languageMenu {
+    min-width: 55px;
+    padding-left: 9px;
+    padding-right: 0px;
+    display: flex;
+}
+.navbar-header > div.languageMenu:hover {
+    color: #e4e4e4;
+    font-weight: 100;
+}
+.languageMenu > a {
+    min-width: 28px;
+    color: #e4e4e4;
+}
+.languageMenu > a:hover{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.languageMenu > div {
+    min-width: 10px;
+}
