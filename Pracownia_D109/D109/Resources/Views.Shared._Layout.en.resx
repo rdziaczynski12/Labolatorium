@@ -153,4 +153,13 @@
   <data name="footer" xml:space="preserve">
     <value>2019 - Rafał Dziaczyński -  student at the Rzeszow University of Technology</value>
   </data>
+  <data name="logoKia" xml:space="preserve">
+    <value>kia-en.png</value>
+  </data>
+  <data name="logoPrz" xml:space="preserve">
+    <value>prz-en.png</value>
+  </data>
+  <data name="logoWeii" xml:space="preserve">
+    <value>weii-en.png</value>
+  </data>
 </root>

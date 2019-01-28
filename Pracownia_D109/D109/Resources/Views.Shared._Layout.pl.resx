@@ -153,4 +153,13 @@
   <data name="footer" xml:space="preserve">
     <value>2019 - Rafał Dziaczyński - student Politechniki Rzeszowskiej</value>
   </data>
+  <data name="logoKia" xml:space="preserve">
+    <value>kia-pl.png</value>
+  </data>
+  <data name="logoPrz" xml:space="preserve">
+    <value>prz-pl.png</value>
+  </data>
+  <data name="logoWeii" xml:space="preserve">
+    <value>weii-pl.png</value>
+  </data>
 </root>

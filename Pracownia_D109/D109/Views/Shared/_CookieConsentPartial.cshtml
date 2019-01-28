@@ -1,5 +1,4 @@
 ﻿@using Microsoft.AspNetCore.Http.Features
-
 @{
     var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
     var showBanner = !consentFeature?.CanTrack ?? false;
@@ -21,11 +20,11 @@
             </div>
             <div class="collapse navbar-collapse">
                 <p class="navbar-text">
-                    <strong>Nasze serwisy używają informacji zapisanych w plikach cookies.</strong>
+                    @Localizer["description"]
                 </p>
                 <div class="navbar-right">
-                    <a asp-controller="Home" asp-action="Privacy" class="btn btn-info navbar-btn">Dowiedz się więcej</a>
-                    <button type="button" class="btn btn-default navbar-btn" data-cookie-string="@cookieString">Akceptuj</button>
+                    <a asp-controller="Home" asp-action="Privacy" class="btn btn-info navbar-btn">@Localizer["more"]</a>
+                    <button type="button" class="btn btn-default navbar-btn" data-cookie-string="@cookieString">@Localizer["accept"]</button>
                 </div>
             </div>
         </div>

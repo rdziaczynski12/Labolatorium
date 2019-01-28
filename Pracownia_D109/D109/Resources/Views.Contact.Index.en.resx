@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="address" xml:space="preserve">
+    <value>Rzeszow University of Technology&lt;br /&gt;
+        Faculty of electrical end computer engineering&lt;br /&gt;
+        Department of Computer and Control Engineering&lt;br /&gt;
+        W. Pola 2, 35-959 Rzeszow - building D&lt;br /&gt;</value>
+  </data>
   <data name="e-mailZabinski" xml:space="preserve">
     <value>&lt;strong&gt;E-mail:&lt;/strong&gt; &lt;a href="mailto:tomz@prz.edu.pl"&gt;tomz@prz.edu.pl&lt;/a&gt;</value>
   </data>

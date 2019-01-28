@@ -105,8 +105,6 @@ E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Contact.Index.pl.resources
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Home.Index.en.resources
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Home.Index.pl.resources
-E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Shared._Layout.en.resources
-E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Shared._Layout.pl.resources
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.csproj.GenerateResource.cache
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\en\D109.resources.dll
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\pl\D109.resources.dll
@@ -114,3 +112,9 @@ E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Cooperation.Index.pl.resources
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Virtual.Index.en.resources
 E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Virtual.Index.pl.resources
+E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Home.Privacy.en.resources
+E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Home.Privacy.pl.resources
+E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Shared._CookieConsentPartial.en.resources
+E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Shared._CookieConsentPartial.pl.resources
+E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Shared._Layout.en.resources
+E:\GIT\Labolatorium\Pracownia_D109\D109\obj\Release\netcoreapp2.1\D109.Resources.Views.Shared._Layout.pl.resources

@@ -1,8 +1,4 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
-@inject IViewLocalizer Localizer
-@{
-    var returnUrl = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}";
-    D109.Controllers.LanguageController.changeLanguage();
+﻿@{
     ViewData["Title"] = @Localizer["title"];
 }
 
@@ -11,6 +7,6 @@
 </header>
 <hr />
 <div style="text-align:center; color:orangered; max-width:100%">
-    <img src="~/images/stronawbudowie.png" style="width:80%" />
+    <img src="~/images/@Localizer["siteUnderConstruction"]" style="width:80%" />
 </div>
 
