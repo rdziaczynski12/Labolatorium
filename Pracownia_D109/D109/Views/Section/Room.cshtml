@@ -1,10 +1,40 @@
 ﻿
 @{
-    ViewData["Title"] = "Inteligentny pokój";
+    ViewData["Title"] = @Localizer["title"];
 }
 
-<header class="hederSections"><h2>@ViewData["Title"]</h2></header>
+<link rel="stylesheet" href="~/css/position.css" />
+<script type="text/javascript" src="~/js/galery.js" defer></script>
+
+<header class="hederSections">
+    <h2>@ViewData["Title"]</h2>
+</header>
 <hr />
-<div style="text-align:center; color:orangered; max-width:100%">
-    <img src="~/images/stronawbudowie.png" style="width:80%" />
-</div>
+<section class="containerPosition">
+    <article class="galery">
+        <div class="bigImage"><img src="~/images/Section/Room/sr1.jpg" alt="Duze zdjecie"></div>
+
+        <div class="miniImg">
+            <div><a href="~/images/Section/Room/sr1.jpg" title="Obraz 1"><img src="~/images/Section/Room/sr1.jpg"></a></div>
+            <div><a href="~/images/Section/Room/sr2.jpg" title="Obraz 2"><img src="~/images/Section/Room/sr2.jpg"></a></div>
+            <div><a href="~/images/Section/Room/sr3.jpg" title="Obraz 3"><img src="~/images/Section/Room/sr3.jpg"></a></div>
+            <div><a href="~/images/Section/Room/sr4.jpg" title="Obraz 4"><img src="~/images/Section/Room/sr4.jpg"></a></div>
+            <div><a href="~/images/Section/Room/sr5.jpg" title="Obraz 5"><img src="~/images/Section/Room/sr5.jpg"></a></div>
+            <div><a href="~/images/Section/Room/sr6.jpg" title="Obraz 6"><img src="~/images/Section/Room/sr6.jpg"></a></div>
+        </div>
+    </article>
+
+    <div class="lineDescription"><hr /></div>
+
+    <article class="description">
+        @Localizer["description"]
+    </article>
+
+    <article class="download">
+        <heder class="DownloadHeder">
+            <h3>@Localizer["download"]</h3>
+        </heder>
+        <hr />
+    </article>
+
+</section>

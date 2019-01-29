@@ -108,3 +108,9 @@ a:hover {
     width: 50px;
     padding-right: 10px;
 }
+
+.description {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}

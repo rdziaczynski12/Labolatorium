@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Stanowisko 2";
+    ViewData["Title"] = @Localizer["title"];
 }
 <link rel="stylesheet" href="~/css/position.css" />
 <script type="text/javascript" src="~/js/galery.js" defer></script>
@@ -22,19 +22,19 @@
     </article>
 
     <article class="description">
-        *** Krótki opis stanowiska ...... ***
+        @Localizer["description"]
     </article>
 
     <article class="download">
         <heder class="DownloadHeder">
-            <h3>Pliki do pobrania</h3>
+            <h3>@Localizer["download"]</h3>
         </heder>
         <hr />
         <ul>
-            <li><a href="~/doc/Automation/sa2.pdf"><img src="~/images/Section/iconPDF.png" />Dokumentackja stanowiska</a></li>
-            <li><a href="~/doc/Automation/norma_IEC61131.pdf"><img src="~/images/Section/iconPDF.png" />Norma IEC61131</a></li>
-            <li><a href="~/doc/Automation/instrukcja-TwinCAT.pdf"><img src="~/images/Section/iconPDF.png" />Instrukcja TwinCAT</a></li>
-            <li><a href="~/doc/Automation/instrukcja-uruchomienia-stanowiska.pdf"><img src="~/images/Section/iconPDF.png" />Instrukcja uruchomienia stanowiska</a></li>
+            <li><a href="~/doc/Automation/sa2.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc1"]</a></li>
+            <li><a href="~/doc/Automation/norma_IEC61131.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc2"]</a></li>
+            <li><a href="~/doc/Automation/instrukcja-TwinCAT.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc3"]</a></li>
+            <li><a href="~/doc/Automation/instrukcja-uruchomienia-stanowiska.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc4"]</a></li>
         </ul>
     </article>
 

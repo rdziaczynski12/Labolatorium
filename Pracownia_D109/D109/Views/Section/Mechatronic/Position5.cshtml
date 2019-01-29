@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Odwrócone wahadło";
+    ViewData["Title"] = @Localizer["title"];
 }
 <link rel="stylesheet" href="~/css/position.css" />
 <script type="text/javascript" src="~/js/galery.js" defer></script>
@@ -17,23 +17,25 @@
             <div><a href="~/images/Section/Mechatronic/sm51.jpg" title="Obraz 1"><img src="~/images/Section/Mechatronic/sm51.jpg"></a></div>
             <div><a href="~/images/Section/Mechatronic/sm52.jpg" title="Obraz 2"><img src="~/images/Section/Mechatronic/sm52.jpg"></a></div>
             <div><a href="~/images/Section/Mechatronic/sm53.jpg" title="Obraz 3"><img src="~/images/Section/Mechatronic/sm53.jpg"></a></div>
+            <div><a href="~/images/Section/Mechatronic/sm54.jpg" title="Obraz 4"><img src="~/images/Section/Mechatronic/sm54.jpg"></a></div>
+            <div><a href="~/images/Section/Mechatronic/sm55.jpg" title="Obraz 5"><img src="~/images/Section/Mechatronic/sm55.jpg"></a></div>
         </div>
     </article>
 
     <article class="description">
-        *** Krótki opis stanowiska ...... ***
+        @Localizer["description"]
     </article>
 
     <article class="download">
         <heder class="DownloadHeder">
-            <h3>Pliki do pobrania</h3>
+            <h3>@Localizer["download"]</h3>
         </heder>
         <hr />
         <ul>
-            <li><a href="~/doc/Mechatronic/sm5-instrukcja.pdf"><img src="~/images/Section/iconPDF.png" />Dokumentackja stanowiska</a></li>
-            <li><a href="~/doc/Mechatronic/sm5-MSA-12-80.pdf"><img src="~/images/Section/iconPDF.png" />Dokumentacja MSA-12-80</a></li>
-            <li><a href="~/doc/Mechatronic/sm5-encoder.pdf"><img src="~/images/Section/iconPDF.png" />Dokumentacja enkodera</a></li>
-            <li><a href="~/doc/Mechatronic/sm5-liniowy-encoder.pdf"><img src="~/images/Section/iconPDF.png" />Dokumentacja enkodera liniowego</a></li>
+            <li><a href="~/doc/Mechatronic/sm5-instrukcja.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc1"]</a></li>
+            <li><a href="~/doc/Mechatronic/sm5-MSA-12-80.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc2"]</a></li>
+            <li><a href="~/doc/Mechatronic/sm5-encoder.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc3"]</a></li>
+            <li><a href="~/doc/Mechatronic/sm5-liniowy-encoder.pdf"><img src="~/images/Section/iconPDF.png" />@Localizer["doc4"]</a></li>
         </ul>
     </article>
 

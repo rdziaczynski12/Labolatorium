@@ -75,7 +75,7 @@ using Microsoft.AspNetCore.Mvc.Localization;
             WriteLiteral("</h2>\r\n</header>\r\n<hr />\r\n<div style=\"text-align:center; color:orangered; max-width:100%\">\r\n    ");
             EndContext();
             BeginContext(209, 76, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "143f675fd9734a9a9d724f4d0db0d0bf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "32f55d3943214395b9f2d0d4aeef632f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

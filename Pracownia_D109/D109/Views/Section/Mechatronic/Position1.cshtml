@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Model dźwigu wieżowego";
+    ViewData["Title"] = @Localizer["title"];
 }
 <link rel="stylesheet" href="~/css/position.css" />
 <script type="text/javascript" src="~/js/galery.js" defer></script>
@@ -23,16 +23,16 @@
     </article>
 
     <article class="description">
-        *** Krótki opis stanowiska ...... ***
+        @Localizer["description"]
     </article>
 
     <article class="download">
         <heder class="DownloadHeder">
-            <h3>Pliki do pobrania</h3>
+            <h3>@Localizer["download"]</h3>
         </heder>
         <hr />
         <ul>
-            <li><a href="~/doc/Mechatronic/sm1.zip"><img src="~/images/Section/iconPDF.png" />Dokumentackja stanowiska</a></li>
+            <li><a href="~/doc/Mechatronic/sm1.zip"><img src="~/images/Section/iconPDF.png" />@Localizer["doc1"]</a></li>
         </ul>
     </article>
 
